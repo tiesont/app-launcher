@@ -1,0 +1,32 @@
+﻿<Window x:Class="AppLauncher.ApplicationEditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ApplicationEditorWindow" Height="327" Width="401">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="175*" />
+            <RowDefinition Height="46*" />
+        </Grid.RowDefinitions>
+        <Button Content="..." 
+                Grid.Row="1" 
+                Height="23" 
+                HorizontalAlignment="Right" 
+                Margin="0,151,12,0" 
+                Name="StartInLookupButton" 
+                VerticalAlignment="Top" 
+                Width="26" />
+        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="12,152,0,0" Name="StartInTextBox" VerticalAlignment="Top" Width="323" />
+        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="12,31,0,0" Name="LabelTextBox" VerticalAlignment="Top" Width="189" />
+        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="12,90,0,0" Name="TargetTextBox" VerticalAlignment="Top" Width="323" />
+        <Button Content="..." Height="23" HorizontalAlignment="Right" Margin="0,89,12,0" Name="TargetLookupButton" VerticalAlignment="Top" Width="26" Grid.Row="1" />
+        <Label Content="Label:" Grid.Row="1" Height="Auto" HorizontalAlignment="Left" Margin="12,8,0,0" Name="label1" VerticalAlignment="Top" Padding="0" />
+        <Label Content="Target:" Height="Auto" HorizontalAlignment="Left" Margin="12,69,0,0" Name="label2" VerticalAlignment="Top" Grid.Row="1" Padding="0" />
+        <Label Content="Start in:" Height="Auto" HorizontalAlignment="Left" Margin="12,131,0,0" Name="label3" VerticalAlignment="Top" Grid.Row="1" Padding="0" />
+        <ComboBox Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,30,12,0" Name="TypeComboBox" VerticalAlignment="Top" Width="160" IsEditable="True" IsReadOnly="True" />
+        <Label Content="Type:" Height="Auto" HorizontalAlignment="Left" Margin="207,8,0,0" Name="label4" Padding="0" VerticalAlignment="Top" Grid.Row="1" Focusable="False" />
+        <Button Content="Save" Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,97,14" Name="SaveButton" Width="75" Height="25" VerticalAlignment="Bottom" />
+        <Button Content="Cancel" Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,12,13" Name="CancelButton" Width="75" Height="25" VerticalAlignment="Bottom" />
+        <Image Height="32" Margin="12,8,217,0" Name="image1" Source="/AppLauncher;component/Images/logo.png" Stretch="UniformToFill" VerticalAlignment="Top" />
+    </Grid>
+</Window>
